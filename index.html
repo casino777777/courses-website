@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@500;600&family=Poppins:wght@400;500;600;700&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/tailwind.css">
+</head>
+
+<body class="font-poppins">
+    <!--First screen-->
+    <section class="bg-gradient-to-r from-purple-500 to-pink-500 pb-24 rounded-br-[150px] flex flex-col">
+        <header class="flex items-center justify-between w-full mx-auto text-white pt-4 px-8">
+            <a href="#">
+                <svg fill="#ffffff" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64.00 64.00" enable-background="new 0 0 64 64" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Browser-dependency"> <path d="M60,5h-56C1.7909007,5,0.0000008,6.7908001,0.0000008,9v5v2v39c0,2.2090988,1.7908999,4,3.9999998,4h56 c2.2092133,0,4-1.7909012,4-4V16v-2V9C64,6.7908001,62.2092133,5,60,5z M62,55c0,1.1027985-0.8972015,2-2,2h-56 c-1.1027856,0-1.9999998-0.8972015-1.9999998-2V16h60V55z M62,14h-60V9c0-1.1027999,0.8972142-2,1.9999998-2h56 c1.1027985,0,2,0.8972001,2,2V14z"></path> <path d="M6.0000005,9c-0.9649,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7851,1.75,1.75,1.75c0.9650002,0,1.75-0.7851,1.75-1.75 C7.7500005,9.7849998,6.9650006,9,6.0000005,9z M6.0000005,11.5c-0.4141998,0-0.75-0.3358002-0.75-0.75s0.3358002-0.75,0.75-0.75 c0.4142146,0,0.75,0.3358002,0.75,0.75S6.4142151,11.5,6.0000005,11.5z"></path> <path d="M16,9c-0.9649,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7851,1.75,1.75,1.75c0.9650002,0,1.75-0.7851,1.75-1.75 C17.75,9.7849998,16.9650002,9,16,9z M16,11.5c-0.4141998,0-0.75-0.3358002-0.75-0.75S15.5858002,10,16,10 c0.4142151,0,0.75,0.3358002,0.75,0.75S16.4142151,11.5,16,11.5z"></path> <path d="M11.000001,9c-0.9649,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7851,1.75,1.75,1.75c0.9649992,0,1.75-0.7851,1.75-1.75 C12.750001,9.7849998,11.9650002,9,11.000001,9z M11.000001,11.5c-0.4142008,0-0.75-0.3358002-0.75-0.75s0.3357992-0.75,0.75-0.75 c0.4142141,0,0.75,0.3358002,0.75,0.75S11.4142151,11.5,11.000001,11.5z"></path> <path d="M16,42c0.8458996,0,1.6112995-0.3124008,2.2164001-0.8119011l5.399601,4.7677994 c-0.2266006,0.463501-0.3651009,0.9776001-0.3651009,1.5284004c0,1.9328995,1.5669994,3.5,3.5,3.5s3.5-1.5671005,3.5-3.5 c0-0.9897003-0.4144001-1.8792992-1.0746861-2.5158997l3.2428875-7.0270004C32.6090012,37.9733009,32.8009987,38,33,38 c1.9329987,0,3.5-1.5670013,3.5-3.5c0-0.0649986-0.0155983-0.1255989-0.0191002-0.1898003l7.2966003-3.1271992 C44.3834,31.6856003,45.1512146,32,46,32c1.9329987,0,3.5-1.5669994,3.5-3.5S47.9329987,25,46,25s-3.5,1.5669994-3.5,3.5 c0,0.3453007,0.0654984,0.6721992,0.1585999,0.9873009l-6.8540001,2.9375992C35.1669006,31.5648003,34.1529999,31,33,31 c-1.9330006,0-3.5,1.5670013-3.5,3.5c0,1.0127983,0.4367008,1.9174995,1.1243,2.5565987l-3.2269993,6.9928017 c-0.210001-0.039299-0.4250011-0.0651016-0.6464005-0.0651016c-0.6522007,0-1.2551994,0.1900024-1.7779007,0.5006027 l-5.4817848-4.8404007c-0.0507145-0.0447006-0.112114-0.0644989-0.1684151-0.0972023 C19.4278011,39.2145996,19.5,38.8674011,19.5,38.5c0-1.9329987-1.5669994-3.5-3.5-3.5s-3.499999,1.5670013-3.499999,3.5 S14.0670004,42,16,42z M46,27c0.8270988,0,1.5,0.6728992,1.5,1.5S46.8270988,30,46,30s-1.5-0.6728992-1.5-1.5S45.1729012,27,46,27z M33,33c0.8270988,0,1.5,0.6729012,1.5,1.5S33.8270988,36,33,36s-1.5-0.6729012-1.5-1.5S32.1729012,33,33,33z M26.7509003,45.9842987c0.8271008,0,1.5,0.6729012,1.5,1.5c0,0.8269997-0.6728992,1.5-1.5,1.5s-1.5-0.6730003-1.5-1.5 C25.2509003,46.6571999,25.9237995,45.9842987,26.7509003,45.9842987z M16,37c0.8271008,0,1.5,0.6729012,1.5,1.5 S16.8271008,40,16,40c-0.8270998,0-1.5-0.6729012-1.5-1.5S15.1729002,37,16,37z"></path> </g> </g></svg>
+            </a>
+
+            <nav class="sm:hidden">
+                <ul class="flex items-center space-x-[30px]">
+                    <li class="font-medium text-[15px] leading-[22px] text-white hover:border-b-2 hover:border-b-white transition">
+                        <a href="#">Courses</a>
+                    </li>
+                    <li class="font-medium text-[15px] leading-[22px] text-white hover:border-b-2 hover:border-b-white transition">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="font-medium text-[15px] leading-[22px] text-white hover:border-b-2 hover:border-b-white transition">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="font-medium text-[15px] leading-[22px] text-white hover:border-b-2 hover:border-b-white transition">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Mobile Menu-->
+            <nav id="mobile-menu" class="fixed left-0 top-0 right-0 bottom-0 bg-gradient-to-r from-purple-500 to-pink-500 hidden items-center justify-center">
+                <ul class="flex flex-col items-center gap-10">
+                    <li>
+                        <a href="#" class="text-xl text-white">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl text-white">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-xl text-white">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-[30px] md:hidden">
+                <div class="">
+                    <a href="#" class="flex items-center gap-1 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Account</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="flex items-center gap-1 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                        </svg>
+                        <span>Card</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--Burger-->
+            <button id="burger" class="hidden sm:block relative h-5 w-[30px] pr-8 group">
+                <span class="absolute top-0 h-[1px] w-full bg-white group-[.active]:translate-y-2 group-[.active]:rotate-45 transition-translate"></span>
+                <span class="absolute top-1/2 h-[1px] w-full bg-white group-[.active]:opacity-0"></span>
+                <span class="absolute bottom-0 h-[1px] w-full bg-white group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45 transition-translate"></span>
+            </button>
+        </header>
+
+        <!--Section Hero-->
+        <section class="flex sm:flex-col items-center mx-auto max-w-[1250px] px-20 pt-20">
+            <div class="flex flex-col text-white max-w-[600px] lg:max-w-[500px] md:max-w-[400px]">
+                <h1 class="text-[50px] lg:text-[40px] md:text-[32px] sm:text-[24px] xs:text-[20px] leading-normal text-bold pb-5">
+                    Upgrade Your skills for better future
+                </h1>
+
+                <p class="pb-6 text-[22px] lg:text-[18px] md:text-[15px] sm:text-[12px] xs:text-[10px] leading-[33px]">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem, possimus debitis voluptatum nemo voluptate earum recusandae. Maxime.
+                </p>
+
+                <div class="flex sm:flex-col sm:gap-y-3 items-start gap-x-5">
+                    <a href="#" class="px-4 py-2 bg-pink-600 text-[16px] sm:text-[8px] sm:w-full md:text-[12px] lg:text-[14px] text-center  font-medium rounded-lg hover:scale-105 hover:bg-pink-700 transition">
+                        <button>Check Courses</button>
+                    </a>
+                    <a href="#" class="px-4 py-[6px] border text-[16px] sm:text-[8px] sm:w-full md:text-[12p] lg:text-[14px] text-center  font-medium border-white rounded-lg hover:scale-105">
+                        <button>Learn more</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sm:max-w-[300px] sm:mt-6">
+                <img src="./hero1-images.png" alt="">
+            </div>
+        </section>
+    </section>
+
+    <!--Section 2-->
+    <section class="flex flex-col items-center pb-20">
+        <div class="max-w-[1075px] mx-auto pt-[42px] pb-10">
+            <h2 class="font-semibold text-[46px] lg:text-[40px] md:text-[36px] sm:text-[30px] xs:text-[26px] lg: leading-[50px] text-[#464747] text-center">Our Company and Partners</h2>
+        </div>
+
+        <div class="grid grid-cols-5 gap-x-[100px] lg:gap-x-10 md:gap-x-6 sm:gap-x-4 px-5">
+            <div>
+                <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-ar21.svg" alt="">
+            </div>
+            <div>
+                <img src="https://www.vectorlogo.zone/logos/teamtreehouse/teamtreehouse-ar21.svg" alt="">
+            </div>
+            <div>
+                <img src="https://www.vectorlogo.zone/logos/amazon/amazon-ar21.svg" alt="">
+            </div>
+            <div>
+                <img src="https://www.vectorlogo.zone/logos/slack/slack-ar21.svg" alt="">
+            </div>
+            <div>
+                <img src="https://www.vectorlogo.zone/logos/comcast/comcast-ar21.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Section 3-->
+    <section class="flex flex-col items-center pb-20">
+        <div class="max-w-[1168px] mx-auto px-20">
+            <h2 class="text-[44px] text-[#464747] font-semibold leading-normal tracking-[-0.002em] md:text-4xl sm:text-3xl pb-3">
+                Our Courses
+            </h2>
+            
+            <div class="flex gap-x-10 text-[18px] text-[#787878] md:flex-wrap md:gap-y-5">
+                <a href="#">
+                    <button class="tab-trigger active">Top Rated</button>
+                </a>
+                <a href="#">
+                    <button class="tab-trigger active">Development</button>
+                </a>
+                <a href="#">
+                    <button class="tab-trigger active">Design</button>
+                </a>
+                <a href="#">
+                    <button class="tab-trigger active">Music</button>
+                </a>
+                <a href="#">
+                    <button class="tab-trigger active">Marketing</button>
+                </a>
+                <a href="#">
+                    <button class="tab-trigger active">Business</button>
+                </a>
+                <a href="#">
+                    <button class="tab-trigger active">Photography</button>
+                </a>
+            </div>
+            <!--Content-->
+            <div class="grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-5 sm:gap-y-10 mt-20 md:mt-10">
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/10/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blueviolet font-semibold">$ 49.99</span>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/20/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-blueviolet font-semibold">$ 49.99</div>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/30/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-blueviolet font-semibold">$ 49.99</div>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/40/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-blueviolet font-semibold">$ 49.99</div>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/10/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blueviolet font-semibold">$ 49.99</span>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/20/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-blueviolet font-semibold">$ 49.99</div>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/30/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-blueviolet font-semibold">$ 49.99</div>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col shadow-md tab-content rounded-md max-w-[400px] mx-auto" href="#">
+                    <div>
+                        <img class="rounded-md" src="https://picsum.photos/id/40/500/400" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 my-4">
+                        <div class="px-3 pl-0 pb-2 my-2 items-start text-[10px]">
+                            <span class="bg-gray-100 px-4 py-2 rounded-md">Artificial Intelligence</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[14px] font-medium pb-2">Modern Artificial Intelligence with zero coding</h3>
+                            <p class="text-[10px] pb-2">Jhon David</p>
+                            <div class="flex items-center">
+                                <span class="flex items-center mr-2 text-yellow-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <div class="flex items-center font-medium text-[14px]">4.9</div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-blueviolet font-semibold">$ 49.99</div>
+                                <div>
+                                    <button class="flex items-center border-2 px-3 py-1 text-xs text-blueviolet font-semibold border-blueviolet rounded-md hover:scale-105">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Section 4-->
+    <section class="flex flex-col items-center pb-20 sm:pb-10">
+        <div class="max-w-[1050px] mx-auto">
+            <div class="flex flex-col items-center max-w-[700px]">
+                <h2 class="text-[36px] font-semibold pb-5">
+                    Our Features and Services
+                </h2>
+                <p class="text-[#464747] leading-[25px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis reprehenderit vitae facilis incidunt officia. Soluta nulla quia ipsa corporis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 5-->
+    <section class="flex flex-col items-center pb-20 sm:pb-10">
+        <div class="flex max-w-[1000px] border-2 border-blueviolet mx-5">
+            <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[30px] p-5">
+                <div class="flex flex-col p-2 sm:items-center max-w-[400px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blueviolet">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                    <h4 class="text-[20px] font-semibold py-2">Life Time Access</h4>
+                    <p class="text-[#464747] font-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis porro ad ducimus incidunt ea mollitia. Expedita, quis?</p>
+                </div>
+                <div class="flex flex-col p-2 sm:items-center max-w-[400px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blueviolet">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                    <h4 class="text-[20px] font-semibold py-2">Life Time Access</h4>
+                    <p class="text-[#464747] font-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis porro ad ducimus incidunt ea mollitia. Expedita, quis?</p>
+                </div>
+                <div class="flex flex-col p-2 sm:items-center max-w-[400px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blueviolet">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                    <h4 class="text-[20px] font-semibold py-2">Life Time Access</h4>
+                    <p class="text-[#464747] font-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis porro ad ducimus incidunt ea mollitia. Expedita, quis?</p>
+                </div>
+                <div class="flex flex-col p-2 sm:items-center max-w-[400px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blueviolet">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                    <h4 class="text-[20px] font-semibold py-2">Life Time Access</h4>
+                    <p class="text-[#464747] font-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis porro ad ducimus incidunt ea mollitia. Expedita, quis?</p>
+                </div>
+                <div class="flex flex-col p-2 sm:items-center max-w-[400px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blueviolet">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                    <h4 class="text-[20px] font-semibold py-2">Life Time Access</h4>
+                    <p class="text-[#464747] font-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis porro ad ducimus incidunt ea mollitia. Expedita, quis?</p>
+                </div>
+                <div class="flex flex-col p-2 sm:items-center max-w-[400px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blueviolet">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                    <h4 class="text-[20px] font-semibold py-2">Life Time Access</h4>
+                    <p class="text-[#464747] font-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis porro ad ducimus incidunt ea mollitia. Expedita, quis?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section6-->
+    <section class="flex flex-col items-center pb-20 sm:pb-10">
+        <div class="max-w-[1144px] mx-auto">
+            <div class="flex items-center">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3>Best Platform to grow</h3>
+                    <p class="text-[#464747]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolores error odit exercitationem dicta quisquam aliquam ab atque necessitatibus, deserunt assumenda, a eos quidem adipisci repellat dolorum nostrum placeat facere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
